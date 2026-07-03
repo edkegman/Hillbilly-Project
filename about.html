@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="nav__bar">
+                    <img src="./assets/hbi__logo--full.png" alt="Logo" class="nav__logo">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link 
+                            page__link">Home</a>
+                        </li>
+                        <li><a href="about.html" class="nav__link 
+                            page__link">About</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="nav__link 
+                            page__link" 
+                            onclick="openCoverageModal(); return false;">Coverage</a>
+                        </li>
+                        <li><a href="pricing.html" class="nav__link 
+                            page__link">Packages</a>
+                        </li>
+                        <li><a href="#" class="nav__link 
+                            nav__link--primary 
+                            " onclick="openModal()">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about__half">
+                    <div class="about__title">
+                        <h2 class="about__title--title">ABOUT <span class="blue">US</span></h2>
+                    </div>
+                    <div class="about__box">
+                        <div class="about__header">
+                            <div class="about__icons">
+                                <i class="fa-regular fa-clock about__icon"></i>
+                            </div>
+                            <div class="about__subject">
+                                <div class="about__box--title">
+                                    <h3 class="about__title--sub">Store <span class="blue">Hours</span></h3>
+                                </div>
+                                <div class="about__content">
+                                    <p>Monday-Friday: <span class="blue">8:00am to 6:00pm</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__box">
+                        <div class="about__header">
+                            <div class="about__icons">
+                                <i class="fa-solid fa-phone about__icon"></i>
+                            </div>
+                            <div class="about__subject">
+                                <div class="about__box--title">
+                                    <h3 class="about__title--sub">Contact <span class="blue">Us</span></h3>
+                                </div>
+                                <div class="about__content">
+                                    <p>Phone Number: <span class="blue underline">(870)-283-7044</span></p>
+                                    <p>Email: <span class="blue"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__box">
+                        <div class="about__header">
+                            <div class="about__icons">
+                                <i class="fa-solid fa-book-open about__icon"></i>
+                            </div>
+                            <div class="about__subject">
+                                <div class="about__box--title">
+                                    <h3 class="about__title--sub">Hillbilly <span class="blue">History</span></h3>
+                                </div>
+                                <div class="about__content">
+                                    <p>Frontier Computer Solutions was started by Ed and Laura Kegley in November of 2000. They were building and repairing PCs themselves in a small rented space. 
+                                        They added a computer technician in 2001. In 2002 they built their own building and added a sales clerk. They also added repair contracts with several large employers to maintain their computers and networks.
+                                    </p>
+                                    <p>In 2006 Hillbilly Wireless was added in order to provide high speed wireless internet access to the rural areas surrounding the Cave City Area.</p>
+                                    <p>In 2009 they started WISPequipment.com to provide the wireless equipment used to access the internet to other wireless internet service providers.</p>
+                                    <p>In November 2014 they purchased the assets of Black Sheep Computings Wireless network in Jonesboro / Paragould, AR.</p>
+                                    <p>In October 2017 they purchased the assets of Vue Wireless in Searcy, AR. They are currently upgrading it to the latest technology. </p>
+                                    <p>In 2021 We changed our name to Hillbilly Internet.  We applied and received three fiber grants from the ARC program through the State to install fiber internet into
+                                        Tupelo, AR, North Independence County (Pheiffer to Cave City) and South Sharp County (Cave City to Evening Shade). So far we have installed over 3 million feet  of conduit and  and one million feet of fiber, Construction is still on-going.
+                                    </p>
+                                    <p>HBW currently has 150+ towers and over 1,600 customers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__half">
+                    <div class="about__half--right">
+                        <div class="about__imgs">
+                                <img class="about__img"src="./assets/owner.avif">
+                            </div>
+                        <div class="about__mission">
+                            <h1 class="about__comma blue">,,</h1>
+                            <h2 class="about__title--sub blue">Our Mission</h2>
+                            <p>Providing reliable technology solutions and high speed internet access to the rural communnities we call home</p>
+                            <div class="about__founder">
+                                <div class="about__icons">
+                                    <i class="fa-solid fa-heart about__icon--founder"></i>
+                                </div>
+                                <div class="about__founder--words">
+                                    <h2 class="about__founder--name">Ed & Laura Kegley</h2>
+                                    <p class="about__founder--title">Founders</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customer__portal">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal__overlay">
+        <div class="modal">
+            <button class="modal__close" onclick="closeModal()">
+                &times;
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="contact">
+                        <div class="contact__header">
+                            <h1 class="contact__title">Give us<span class="blue"> a shout</span></h1>
+                            <p>We pride ourselves on our customer service.</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__icons">
+                                <i class="fa-solid fa-phone contact__icon"></i>
+                            </div>
+                            <div class="contact__info">
+                                <span class="phone__number">Phone Number</span>
+                                <h3 class="contact__phone blue">(870)-283-7044</h3>
+                            </div>
+                        </div>
+                        <div class="contact__boxes">
+                            <div class="contact__inputs">
+                                <input class="name" placeholder="Name">
+                                <input class="email" placeholder="E-mail">
+                            </div>
+                            <textarea class="description" placeholder="How do you do"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coverage__overlay">
+        <div class="coverage__modal">
+            <button class="coverage__close" onclick="closeCoverageModal()">&times;</button>
+            <form class="coverage__form">
+                <h2 class="coverage__title">Fill out your Hillbilly Info:</h2>
+                <p class="coverage__required">* Required</p>
+                <label>First: <input type="text" required></label>
+                <label>Last: <input type="text" required></label>
+                <label>Address: <input type="text" required></label>
+                <label>City: <input type="text" required></label>
+                <label>
+                    Country:
+                    <select>
+                        <option>United States</option>
+                    </select>
+                </label>
+                <label>
+                    State:
+                    <select>
+                        <option>Arkansas</option>
+                    </select>
+                </label>
+                <label>Zip: <input type="text"></label>
+                <label>Phone: <input type="tel" required></label>
+                <label>Email: <input type="email" required></label>
+                <label>
+                    Where did you hear about us:
+                    <select required>
+                        <option>Please Select</option>
+                        <option>Facebook</option>
+                        <option>Google</option>
+                        <option>Friend</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>
+                    Contact by:
+                    <select>
+                        <option>Phone</option>
+                        <option>Email</option>
+                    </select>
+                </label>
+                <label>
+                    Best time to contact:
+                    <select>
+                        <option>Anytime</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                    </select>
+                </label>
+                <label>
+                    Comments / Questions:
+                    <textarea></textarea>
+                </label>
+                <button type="submit" class="coverage__submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <div class="footer__img">
+                    <a href="#">
+                        <img src="./assets/hbi__logo.png" alt="Logo" class="footer__logo">
+                    </a>
+                </div>
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link page__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link page__link">About</a></li>
+                    <li><a href="#about" class="nav__link page__link" onclick="openCoverageModal(); return false;">Coverage</a></li>
+                    <li><a href="pricing.html" class="nav__link page__link">Packages</a></li>
+                    <li><a href="#" class="nav__link page__link" onclick="openModal()">Contact</a></li>
+                </ul>
+                <p class="footer__copyright">© 2026 Hillbilly Internet. All rights reserved.</p>
+            </div>
+        </div>
+<script src="apps.js"></script>    
+</body>
+</html>

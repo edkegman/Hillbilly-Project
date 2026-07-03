@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section id="landing">
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="nav__bar">
+                    <img src="./assets/hbi__logo--full.png" alt="Logo" class="nav__logo">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link 
+                            page__link">Home</a>
+                        </li>
+                        <li><a href="about.html" class="nav__link 
+                            page__link">About</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="nav__link 
+                            page__link" 
+                            onclick="openCoverageModal(); return false;">Coverage</a>
+                        </li>
+                        <li><a href="pricing.html" class="nav__link 
+                            page__link">Packages</a>
+                        </li>
+                        <li><a href="#" class="nav__link 
+                            nav__link--primary 
+                            " onclick="openModal()">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <div class="modal__overlay">
+        <div class="modal">
+            <button class="modal__close" onclick="closeModal()">
+                &times;
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="contact">
+                        <div class="contact__header">
+                            <h1 class="contact__title">Give us<span class="blue"> a shout</span></h1>
+                            <p>We pride ourselves on our customer service.</p>
+                        </div>
+                        <div class="contact__card">
+                            <div class="contact__icons">
+                                <i class="fa-solid fa-phone contact__icon"></i>
+                            </div>
+                            <div class="contact__info">
+                                <span class="phone__number">Phone Number</span>
+                                <h3 class="contact__phone blue">(870)-283-7044</h3>
+                            </div>
+                        </div>
+                        <div class="contact__boxes">
+                            <div class="contact__inputs">
+                                <input class="name" placeholder="Name">
+                                <input class="email" placeholder="E-mail">
+                            </div>
+                            <textarea class="description" placeholder="How do you do"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="coverage__overlay">
+        <div class="coverage__modal">
+            <button class="coverage__close" onclick="closeCoverageModal()">&times;</button>
+            <form class="coverage__form">
+                <h2 class="coverage__title">Fill out your Hillbilly Info:</h2>
+                <p class="coverage__required">* Required</p>
+                <label>First: <input type="text" required></label>
+                <label>Last: <input type="text" required></label>
+                <label>Address: <input type="text" required></label>
+                <label>City: <input type="text" required></label>
+                <label>
+                    Country:
+                    <select>
+                        <option>United States</option>
+                    </select>
+                </label>
+                <label>
+                    State:
+                    <select>
+                        <option>Arkansas</option>
+                    </select>
+                </label>
+                <label>Zip: <input type="text"></label>
+                <label>Phone: <input type="tel" required></label>
+                <label>Email: <input type="email" required></label>
+                <label>
+                    Where did you hear about us:
+                    <select required>
+                        <option>Please Select</option>
+                        <option>Facebook</option>
+                        <option>Google</option>
+                        <option>Friend</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>
+                    Contact by:
+                    <select>
+                        <option>Phone</option>
+                        <option>Email</option>
+                    </select>
+                </label>
+                <label>
+                    Best time to contact:
+                    <select>
+                        <option>Anytime</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                    </select>
+                </label>
+                <label>
+                    Comments / Questions:
+                    <textarea></textarea>
+                </label>
+                <button type="submit" class="coverage__submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="price__containers">
+                    <div class="price__header">
+                        <div class="price__header-icon">
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                        </div>
+                        <h1 class="price__title">Internet Packages</h1>
+                        <p class="price__title--sub">Fast,reliable Internet for every home and budget</p>
+                    </div>
+                    <div class="price__genre">
+                        <div class="price__genre--left"> 
+                            <div class="price__icon">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <div class="price__text">
+                                <h2 class="price__catagory">Fiber Optic Internet</h2>
+                                <p class="price__subtitle">Symmetrical speeds up to 1 Gig. Built for streaming, gaming, and working from home</p>
+                            </div>
+                        </div>
+                        <div class="price__genre--right">
+                            <h3 class="personal">Residental Plans</h3>
+                        </div>
+                    </div>
+                    <div class="price__container">
+                        <div class="price__group">
+                            <div class="price__item reveal">
+                                <div class="price__card">
+                                    <div class="price__top">
+                                        <i class="fa-solid fa-wifi feature__icon"></i>
+                                        <h3 class="price__titles">Value</h3>
+                                    </div>
+                                    <div class="feature__price">
+                                        <h2 class="feature__amount">$49.99 <span class="monthly">/month</span></h2>
+                                    </div>
+                                    <ul class="feature__list">
+                                        <li class="feature__list-item">100 Mbps Download</li>
+                                        <li class="feature__list-item">100 Mbps Upload</li>
+                                        <li class="feature__list-item">Great for a household of 4</li>
+                                        <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-video feature__icon"></i>
+                                    <h3 class="price__titles">Extra Value</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$79.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">200 Mbps Download</li>
+                                    <li class="feature__list-item">200 Mbps Upload</li>
+                                    <li class="feature__list-item">Best for 2 live streaming and 3 gamers</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-star feature__icon"></i>
+                                    <h3 class="price__titles">Select</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$99.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">500 Mbps Download</li>
+                                    <li class="feature__list-item">500 Mbps Upload</li>
+                                    <li class="feature__list-item">Perfect for gamers, downloads, and streaming</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-bolt feature__icon"></i>
+                                    <h3 class="price__titles">Pro</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$149.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">1 Gbps Download</li>
+                                    <li class="feature__list-item">1 Gbps Upload</li>
+                                    <li class="feature__list-item">The ultimate internet experience</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="price__genre">
+                        <div class="price__genre--left">
+                            <div class="price__icon">
+                                <i class="fa-solid fa-satellite-dish"></i>
+                            </div>
+                            <div class="price__text">
+                            <h2 class="price__catagory">Wireless Internet</h2>
+                            <p class="price__subtitle">Symmetrical speeds up to 1 Gig. Built for streaming, gaming, and working from home</p>
+                            </div>
+                        </div>
+                        <div class="price__genre--right">
+                            <h3 class="personal">Residental Plans</h3>
+                        </div>
+                    </div>
+                    <div class="price__container">
+                        <div class="price__group">
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-wifi feature__icon"></i>
+                                    <h3 class="price__titles">Value</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$39.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">25 Mbps Download</li>
+                                    <li class="feature__list-item">5 Mbps Upload</li>
+                                    <li class="feature__list-item">Unlimited Data</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-star feature__icon"></i>
+                                    <h3 class="price__titles">Select</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$49.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">27 Mbps Download</li>
+                                    <li class="feature__list-item">5 Mbps Upload</li>
+                                    <li class="feature__list-item">Unlimited Data</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-film feature__icon"></i>
+                                    <h3 class="price__titles">Pro</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$69.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">30 Mbps Download</li>
+                                    <li class="feature__list-item">8 Mbps Upload</li>
+                                    <li class="feature__list-item">Great for Streaming</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-gamepad feature__icon"></i>
+                                    <h3 class="price__titles">Gamers</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$89.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">35 Mbps Download</li>
+                                    <li class="feature__list-item">10 Mbps Upload</li>
+                                    <li class="feature__list-item">Best for Gaming</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-bolt feature__icon"></i>
+                                    <h3 class="price__titles">Ultra</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$139.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">40 Mbps Download</li>
+                                    <li class="feature__list-item">10 Mbps Upload</li>
+                                    <li class="feature__list-item">Best for Downloads</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-tower-broadcast feature__icon"></i>
+                                    <h3 class="price__titles">Supercharged</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$189.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">45 Mbps Download</li>
+                                    <li class="feature__list-item">10 Mbps Upload</li>
+                                    <li class="feature__list-item">Best for Multiple Users</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__genre">
+                        <div class="price__genre--left"> 
+                            <div class="price__icon">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div class="price__text">
+                                <h2 class="price__catagory">Business Fiber Internet</h2>
+                                <p class="price__subtitle">Reliable business-class fiber with static IP options and symmetrical speeds.</p>
+                            </div>
+                        </div>
+                        <div class="price__genre--right">
+                            <h3 class="price__badge">Business Plans</h3>
+                        </div>
+                    </div>
+
+                    <div class="price__container">
+                        <div class="price__group">
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-briefcase feature__icon"></i>
+                                    <h3 class="price__titles">Biz Basic</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$79.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">100 Mbps Download</li>
+                                    <li class="feature__list-item">100 Mbps Upload</li>
+                                    <li class="feature__list-item">1 Static IP Address</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-scale-balanced feature__icon"></i>
+                                    <h3 class="price__titles">Biz Silver</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$149.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">200 Mbps Download</li>
+                                    <li class="feature__list-item">200 Mbps Upload</li>
+                                    <li class="feature__list-item">5 Static IP Addresses</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-medal feature__icon"></i>
+                                    <h3 class="price__titles">Biz Gold</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$249.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">500 Mbps Download</li>
+                                    <li class="feature__list-item">500 Mbps Upload</li>
+                                    <li class="feature__list-item">5 Static IP Addresses</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-gem feature__icon"></i>
+                                    <h3 class="price__titles">Biz Platinum</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$349.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">1000 Mbps Download</li>
+                                    <li class="feature__list-item">1000 Mbps Upload</li>
+                                    <li class="feature__list-item">5 Static IP Addresses</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__genre">
+                        <div class="price__genre--left"> 
+                            <div class="price__icon">
+                                <i class="fa-solid fa-tower-broadcast"></i>
+                            </div>
+                            <div class="price__text">
+                                <h2 class="price__catagory">Business Wireless Internet</h2>
+                                <p class="price__subtitle">Reliable wireless internet plans built for small businesses, file transfers, and multiple employees.</p>
+                            </div>
+                        </div>
+                        <div class="price__genre--right">
+                            <h3 class="price__badge">Business Plans</h3>
+                        </div>
+                    </div>
+
+                    <div class="price__container">
+                        <div class="price__group">
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-user-tie feature__icon"></i>
+                                    <h3 class="price__titles">Biz-1</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$79.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">18 Mbps Download</li>
+                                    <li class="feature__list-item">5 Mbps Upload</li>
+                                    <li class="feature__list-item">Best for single person business</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                    <li class="feature__list-item">$200 Installation Fee</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-envelope-open-text feature__icon"></i>
+                                    <h3 class="price__titles">Biz-2</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$99.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">20 Mbps Download</li>
+                                    <li class="feature__list-item">5 Mbps Upload</li>
+                                    <li class="feature__list-item">Frequent emails and file transfers</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-users feature__icon"></i>
+                                    <h3 class="price__titles">Biz-3</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$149.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">22 Mbps Download</li>
+                                    <li class="feature__list-item">5 Mbps Upload</li>
+                                    <li class="feature__list-item">Multiple employees and large file transfers</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                            <div class="price__item reveal">
+                                <div class="price__top">
+                                    <i class="fa-solid fa-building feature__icon"></i>
+                                    <h3 class="price__titles">Biz-4</h3>
+                                </div>
+                                <div class="feature__price">
+                                    <h2 class="feature__amount">$199.99 <span class="monthly">/month</span></h2>
+                                </div>
+                                <ul class="feature__list">
+                                    <li class="feature__list-item">25 Mbps Download</li>
+                                    <li class="feature__list-item">5 Mbps Upload</li>
+                                    <li class="feature__list-item">Business wireless package</li>
+                                    <li class="feature__list-item">+ $10 Equipment Lease</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <div class="footer__img">
+                    <a href="#">
+                        <img src="./assets/hbi__logo.png" alt="Logo" class="footer__logo">
+                    </a>
+                </div>
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link page__link">Home</a></li>
+                    <li><a href="about.html" class="nav__link page__link">About</a></li>
+                    <li><a href="#about" class="nav__link page__link" onclick="openCoverageModal(); return false;">Coverage</a></li>
+                    <li><a href="pricing.html" class="nav__link page__link">Packages</a></li>
+                    <li><a href="#" class="nav__link page__link" onclick="openModal()">Contact</a></li>
+                </ul>
+                <p class="footer__copyright">© 2026 Hillbilly Internet. All rights reserved.</p>
+            </div>
+        </div>
+<script src="apps.js"></script>    
+</body>
+</html>
