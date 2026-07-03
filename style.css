@@ -1342,6 +1342,7 @@ Tablet
     .contact__boxes {
         width: 100%;
     }
+    
 }
 
 /* 
@@ -1425,6 +1426,52 @@ Tablet
         font-size: 24px;
     }
 
+    #about .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        margin: 0;
+    }
+
+    .about__half,
+    .about__half--right {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .about__box {
+        width: 100%;
+    }
+
+    .about__images {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about__img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .about__mission {
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .about__founder {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about__title {
+        text-align: center;
+    }
+
+    .about__title::after {
+        margin: 20px auto 0;
+    }
     
     .footer__row {
         gap: 24px;
