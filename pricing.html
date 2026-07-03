@@ -75,59 +75,124 @@
         <div class="coverage__modal">
             <button class="coverage__close" onclick="closeCoverageModal()">&times;</button>
             <form class="coverage__form">
-                <h2 class="coverage__title">Fill out your Hillbilly Info:</h2>
-                <p class="coverage__required">* Required</p>
-                <label>First: <input type="text" required></label>
-                <label>Last: <input type="text" required></label>
-                <label>Address: <input type="text" required></label>
-                <label>City: <input type="text" required></label>
-                <label>
-                    Country:
-                    <select>
-                        <option>United States</option>
-                    </select>
-                </label>
-                <label>
-                    State:
-                    <select>
-                        <option>Arkansas</option>
-                    </select>
-                </label>
-                <label>Zip: <input type="text"></label>
-                <label>Phone: <input type="tel" required></label>
-                <label>Email: <input type="email" required></label>
-                <label>
-                    Where did you hear about us:
-                    <select required>
-                        <option>Please Select</option>
-                        <option>Facebook</option>
-                        <option>Google</option>
-                        <option>Friend</option>
-                        <option>Other</option>
-                    </select>
-                </label>
-                <label>
-                    Contact by:
-                    <select>
-                        <option>Phone</option>
-                        <option>Email</option>
-                    </select>
-                </label>
-                <label>
-                    Best time to contact:
-                    <select>
-                        <option>Anytime</option>
-                        <option>Morning</option>
-                        <option>Afternoon</option>
-                        <option>Evening</option>
-                    </select>
-                </label>
-                <label>
-                    Comments / Questions:
-                    <textarea></textarea>
-                </label>
-                <button type="submit" class="coverage__submit">Submit</button>
-            </form>
+
+            <h2 class="coverage__title">
+                Fill out your Hillbilly Info:
+            </h2>
+
+            <p class="coverage__required">
+                * Required
+            </p>
+
+            <label>
+                First:
+                <input type="text" required>
+            </label>
+
+            <label>
+                Last:
+                <input type="text" required>
+            </label>
+
+            <label>
+                Address:
+                <input type="text" required>
+            </label>
+
+            <label>
+                City:
+                <input type="text" required>
+            </label>
+
+            <label>
+                Country:
+                <select>
+                    <option>United States</option>
+                </select>
+            </label>
+
+            <label>
+                State:
+                <select>
+                    <option>Arkansas</option>
+                </select>
+            </label>
+
+            <label>
+                Zip:
+                <input type="text">
+            </label>
+
+            <label>
+                Phone:
+                <input type="tel" required>
+            </label>
+
+            <label>
+                Email:
+                <input type="email" required>
+            </label>
+
+            <label>
+                Where did you hear about us:
+                <select required>
+                    <option>Please Select</option>
+                    <option>Facebook</option>
+                    <option>Google</option>
+                    <option>Friend</option>
+                    <option>Other</option>
+                </select>
+            </label>
+
+            <label>
+                Contact by:
+                <select>
+                    <option>Phone</option>
+                    <option>Email</option>
+                </select>
+            </label>
+
+            <label>
+                Best time to contact:
+                <select>
+                    <option>Anytime</option>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                </select>
+            </label>
+
+            <label>
+                Comments / Questions:
+                <textarea></textarea>
+            </label>
+
+            <!-- This no longer submits the form -->
+            <button type="submit" class="coverage__submit">
+                Next
+            </button>
+
+        </form>
+
+            <div class="coverage__map hidden">
+                <h2 class="coverage__title">
+                    Pin Your Home
+                </h2>
+                <p class="coverage__subtitle">
+                    Drag the marker or click your exact house.
+                </p>
+                <div id="coverageMap"></div>
+                <input type="hidden" id="homeLat">
+                <input type="hidden" id="homeLng">
+                <div class="coverage__buttons">
+                    <button type="button" class="coverage__back">
+                        Back
+                    </button>
+                    <button type="b" class="coverage__submit" onclick="submitCoverageRequest()">
+                        Submit
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
     <section id="pricing">
