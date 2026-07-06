@@ -13,7 +13,7 @@
             <div class="container">
                 <div class="row">
                     <div class="nav__bar">
-                    <img src="./assets/hbi__logo--full.png" alt="Logo" class="nav__logo">
+                    <a href="index.html"><img  src="./assets/hbi__logo--full.png" alt="Logo" class="nav__logo"></a>
                     <ul class="nav__list">
                         <li><a href="index.html" class="nav__link 
                             page__link">Home</a>
@@ -195,6 +195,318 @@
             </div>
         </div>
     </div>
+    <div class="facts__overlay" id="factsOverlay">
+
+    <div class="facts__modal">
+
+        <button class="facts__close" onclick="closeFacts()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="facts__header">
+            <i class="fa-solid fa-file-lines"></i>
+            <div>
+                <h2 id="factsPlanName">Broadband Facts</h2>
+                <p id="factsPlanType">Fiber Value Plan</p>
+            </div>
+        </div>
+
+        <div class="facts__body">
+
+            <div class="facts__section">
+
+                <h3>Monthly Price</h3>
+
+                <div class="facts__row">
+                    <span>Plan Price</span>
+                    <strong id="factsPrice">$49.99/mo</strong>
+                </div>
+
+                <div class="facts__row">
+                    <span>Equipment Lease</span>
+                    <strong>+$10/mo</strong>
+                </div>
+
+                <div class="facts__row">
+                    <span>Contract</span>
+                    <strong id="fccInstall">None</strong>
+                </div>
+
+            </div>
+
+            <div class="facts__section">
+
+                <h3>Typical Performance</h3>
+
+                <div class="facts__row">
+                    <span>Download Speed</span>
+                    <strong id="factsDownload">100 Mbps</strong>
+                </div>
+
+                <div class="facts__row">
+                    <span>Upload Speed</span>
+                    <strong id="factsUpload">100 Mbps</strong>
+                </div>
+
+                <div class="facts__row">
+                    <span>Latency</span>
+                    <strong id="factsLatency">18–28 ms</strong>
+                </div>
+
+            </div>
+
+            <div class="facts__section">
+
+                <h3>Data Included</h3>
+
+                <div class="facts__row">
+                    <span>Monthly Data</span>
+                    <strong id="factsData">Unlimited</strong>
+                </div>
+
+            </div>
+
+            <div class="facts__section">
+
+                <h3>Additional Charges</h3>
+
+                <div class="facts__row">
+                    <span>Equipment Lease</span>
+                    <strong id="factsEquipment">$10/mo</strong>
+                </div>
+
+                <div class="facts__row">
+                    <span>Government Taxes</span>
+                    <strong>Varies</strong>
+                </div>
+
+                <div class="facts__row">
+                    <span>Early Termination Fee</span>
+                    <strong>None</strong>
+                </div>
+
+            </div>
+
+            <div class="facts__section">
+
+                <h3>Customer Support</h3>
+
+                <div class="facts__support">
+
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(870) 283-7044</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@hillbillywireless.com</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <span>hillbillywireless.com</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="facts__official facts__official-btn" onclick="openFCC()">
+    View Official FCC Broadband Label
+</button>
+
+    </div>
+
+    <div class="facts__footer">
+
+        <a href="https://www.fcc.gov/consumers" target="_blank">
+            Learn more about Broadband Consumer Labels
+        </a>
+
+    </div>
+
+</div>
+
+</div>
+            <div class="fcc__overlay" id="fccOverlay">
+
+                <div class="fcc__modal">
+
+                    <button class="fcc__close" onclick="closeFCC()">
+                        &times;
+                    </button>
+
+                    <div class="fcc__label">
+
+                        <h1 class="fcc__title">
+                            Broadband Facts
+                        </h1>
+
+                        <div class="fcc__provider">
+                            <strong id="fccCompany">
+                                Hillbilly Internet
+                            </strong>
+
+                            <span id="fccPlan">
+                                Fiber Value
+                            </span>
+                        </div>
+
+                        <div class="fcc__disclosure">
+                            Broadband Consumer Disclosure
+                        </div>
+
+                        <!-- Monthly Price -->
+
+                        <div class="fcc__section">
+
+                            <div class="fcc__section-title">
+                                Monthly Price
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Monthly Price</span>
+                                <strong id="fccPrice">$49.99</strong>
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>This Monthly Price is an Introductory Rate</span>
+                                <strong>No</strong>
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Contract</span>
+                                <strong>None</strong>
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Terms of Contract</span>
+
+                                <a href="terms.html">
+                                    View Terms
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Performance -->
+
+                        <div class="fcc__section">
+
+                            <div class="fcc__section-title">
+                                Typical Speeds
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Download Speed</span>
+                                <strong id="fccDownload">
+                                    100 Mbps
+                                </strong>
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Upload Speed</span>
+                                <strong id="fccUpload">
+                                    100 Mbps
+                                </strong>
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Latency</span>
+                                <strong id="fccLatency">
+                                    18–28 ms
+                                </strong>
+                            </div>
+
+                        </div>
+
+                        <!-- Data -->
+
+                        <div class="fcc__section">
+
+                            <div class="fcc__section-title">
+                                Data Included
+                            </div>
+
+                            <div class="fcc__row">
+                                <span>Monthly Data Included</span>
+                                <strong id="fccData">
+                                    Unlimited
+                                </strong>
+                            </div>
+                        </div>
+
+                        <!-- Additional Charges -->
+
+                    <div class="fcc__section">
+
+                        <div class="fcc__section-title">
+                            Additional Charges & Terms
+                        </div>
+
+                        <div class="fcc__row">
+                            <span>Provider Monthly Fees</span>
+                            <strong id="fccEquipment">
+                                Equipment Lease $10/mo
+                            </strong>
+                        </div>
+
+                        <div class="fcc__row">
+                            <span>One-Time Fees</span>
+                            <strong>None</strong>
+                        </div>
+
+                        <div class="fcc__row">
+                            <span>Early Termination Fee</span>
+                            <strong>None</strong>
+                        </div>
+
+                        <div class="fcc__row">
+                            <span>Government Taxes</span>
+                            <strong>Varies</strong>
+                        </div>
+
+                    </div>
+
+                    <!-- Customer Support -->
+
+                    <div class="fcc__section">
+
+                        <div class="fcc__section-title">
+                            Customer Support
+                        </div>
+
+                        <p>Phone: (870) 283-7044</p>
+                        <p>Email: support@hillbillywireless.com</p>
+                        <p>Website: hillbillywireless.com</p>
+
+                    </div>
+
+                    <!-- Footer -->
+
+                    <div class="fcc__footer">
+
+                        <p>
+                            Learn more about the terms used on this label by visiting the FCC Consumer Resource Center.
+                        </p>
+
+                        <a href="https://www.fcc.gov/consumers" target="_blank">
+                            FCC Consumer Resource Center
+                        </a>
+
+                        <div class="fcc__id">
+                            Unique Plan Identifier:
+                            <span id="fccID">
+                                HBW-FIBER-VALUE
+                            </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        </div>
     <section id="pricing">
         <div class="container">
             <div class="row">
@@ -223,7 +535,6 @@
                     <div class="price__container">
                         <div class="price__group">
                             <div class="price__item reveal">
-                                <div class="price__card">
                                     <div class="price__top">
                                         <i class="fa-solid fa-wifi feature__icon"></i>
                                         <h3 class="price__titles">Value</h3>
@@ -237,7 +548,10 @@
                                         <li class="feature__list-item">Great for a household of 4</li>
                                         <li class="feature__list-item">+ $10 Equipment Lease</li>
                                     </ul>
-                                </div>
+                                    <button class="facts__button" onclick="openFacts('fiber-value')">
+                                        <i class="fa-solid fa-file-lines"></i>
+                                            Broadband Facts
+                                    </button>                            
                             </div>
 
                             <div class="price__item reveal">
@@ -254,6 +568,10 @@
                                     <li class="feature__list-item">Best for 2 live streaming and 3 gamers</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('fiber-extra-value')">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                        Broadband Facts
+                                </button>
                             </div>
 
                             <div class="price__item reveal">
@@ -270,6 +588,10 @@
                                     <li class="feature__list-item">Perfect for gamers, downloads, and streaming</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('fiber-select')">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                        Broadband Facts
+                                </button>
                             </div>
 
                             <div class="price__item reveal">
@@ -286,6 +608,10 @@
                                     <li class="feature__list-item">The ultimate internet experience</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('fiber-pro')">
+                                <i class="fa-solid fa-file-lines"></i>
+                                    Broadband Facts
+                                </button>
                             </div>
                         </div>
                     </div> 
@@ -319,6 +645,10 @@
                                     <li class="feature__list-item">Unlimited Data</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('wireless-value')">
+                                    <i class="fa-solid fa-file-lines"></i>
+                                        Broadband Facts
+                                </button>
                             </div>
 
                             <div class="price__item reveal">
@@ -335,6 +665,10 @@
                                     <li class="feature__list-item">Unlimited Data</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('wireless-select')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -351,6 +685,10 @@
                                     <li class="feature__list-item">Great for Streaming</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('wireless-pro')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -367,6 +705,10 @@
                                     <li class="feature__list-item">Best for Gaming</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('wireless-gamers')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -383,6 +725,10 @@
                                     <li class="feature__list-item">Best for Downloads</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('wireless-ultra')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -399,6 +745,10 @@
                                     <li class="feature__list-item">Best for Multiple Users</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('wireless-supercharged')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
                         </div>
                     </div>
@@ -434,6 +784,10 @@
                                     <li class="feature__list-item">1 Static IP Address</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-fiber-basic')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -450,6 +804,10 @@
                                     <li class="feature__list-item">5 Static IP Addresses</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-fiber-silver')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -466,6 +824,10 @@
                                     <li class="feature__list-item">5 Static IP Addresses</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-fiber-gold')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -482,6 +844,10 @@
                                     <li class="feature__list-item">5 Static IP Addresses</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-fiber-platinum')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
                         </div>
                     </div>
@@ -518,6 +884,10 @@
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                     <li class="feature__list-item">$200 Installation Fee</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-wireless-1')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -534,6 +904,10 @@
                                     <li class="feature__list-item">Frequent emails and file transfers</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-wireless-2')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -550,6 +924,10 @@
                                     <li class="feature__list-item">Multiple employees and large file transfers</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-wireless-3')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                             <div class="price__item reveal">
@@ -566,6 +944,10 @@
                                     <li class="feature__list-item">Business wireless package</li>
                                     <li class="feature__list-item">+ $10 Equipment Lease</li>
                                 </ul>
+                                <button class="facts__button" onclick="openFacts('biz-wireless-4')">
+    <i class="fa-solid fa-file-lines"></i>
+    Broadband Facts
+</button>
                             </div>
 
                         </div>
@@ -588,7 +970,16 @@
                     <li><a href="about.html" class="nav__link page__link">About</a></li>
                     <li><a href="#about" class="nav__link page__link" onclick="openCoverageModal(); return false;">Coverage</a></li>
                     <li><a href="pricing.html" class="nav__link page__link">Packages</a></li>
-                    <li><a href="#" class="nav__link page__link" onclick="openModal()">Contact</a></li>
+                </ul>
+                <ul class="nav__list">
+                    <li><a href="terms.html" class="nav__link page__link">Terms of Service</a></li>
+                    <li><a href="privacy.html" class="nav__link page__link">Privacy Policy</a></li>
+                    <li><a href="use.html" class="nav__link page__link">Acceptable Use Policy</a></li>
+                </ul>
+                <ul class="socials__list">
+                    <li><i class="fa-solid fa-phone"></i><a href="tel:8702837044">(870) 283-7044</a></li>
+                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:support@hillbilly.com">support@hillbilly.com</a></li>
+                    <li><a href="https://www.facebook.com/groups/hillbillywireless/"><i class="fa-brands fa-facebook-f"></i></a></li>
                 </ul>
                 <p class="footer__copyright">© 2026 Hillbilly Internet. All rights reserved.</p>
             </div>
