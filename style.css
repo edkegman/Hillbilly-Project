@@ -2704,17 +2704,17 @@ Tablet
     }
 
     .portal__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-   .contract-summary {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    .contract-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-  .official-contract {
-    flex-direction: column;
-    text-align: center;
-  }
+    .official-contract {
+        flex-direction: column;
+        text-align: center;
+    }
 
   .portal__hero {
         flex-direction: column;
@@ -2732,8 +2732,16 @@ Tablet
     }
 
     .portal__imgs {
-    height: 360px;
-  }
+        height: 360px;
+    }
+
+    .care-plan__hero {
+        grid-template-columns: 1fr;
+    }
+
+    .care-plan__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
 
@@ -3116,4 +3124,30 @@ Tablet
     .btn__menu {
         display: block;
     }
+
+    #care-plan {
+        padding: 56px 0;
+    }
+
+    .care-plan__hero {
+        padding: 28px;
+    }
+
+    .care-plan__text h1 {
+        font-size: 36px;
+    }
+
+    .care-plan__grid,
+    .care-plan__details {
+        grid-template-columns: 1fr;
+    }
+
+    .care-plan__image-wrap {
+        height: 320px;
+    }
+
+    .care-plan__cta {
+        padding: 32px 24px;
+    }
+
 }
