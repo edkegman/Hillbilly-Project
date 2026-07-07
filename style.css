@@ -1301,9 +1301,9 @@ facts
     animation: factsPopup .35s ease;
 }
 
-/*============================
+/*
  Header
-============================*/
+*/
 
 .facts__header{
     display:flex;
@@ -1348,9 +1348,9 @@ facts
     font-size:18px;
 }
 
-/*============================
+/*
  Close Button
-============================*/
+*/
 
 .facts__close{
     position:absolute;
@@ -1381,9 +1381,9 @@ facts
     transform:rotate(90deg);
 }
 
-/*============================
+/*
  Body
-============================*/
+*/
 
 .facts__body{
 
@@ -1425,9 +1425,9 @@ facts
 
 }
 
-/*============================
+/*
  Rows
-============================*/
+*/
 
 .facts__row{
 
@@ -1461,9 +1461,9 @@ facts
 
 }
 
-/*============================
+/*
  Support
-============================*/
+*/
 
 .facts__support{
 
@@ -1543,9 +1543,9 @@ facts
     font-size: 14px;
 }
 
-/*============================
+/*
  Footer
-============================*/
+*/
 
 .facts__footer{
 
@@ -1579,9 +1579,9 @@ facts
 
 }
 
-/*============================
+/*
  Scrollbar
-============================*/
+*/
 
 .facts__body::-webkit-scrollbar{
 
@@ -1626,9 +1626,9 @@ facts
     visibility: visible;
 }
 
-/*========================================
+/*
     Modal
-========================================*/
+*/
 
 .fcc__modal {
     position: relative;
@@ -1646,9 +1646,9 @@ facts
     box-shadow: 0 20px 60px rgba(0,0,0,.35);
 }
 
-/*========================================
+/*
     Close Button
-========================================*/
+*/
 
 .fcc__close {
     position: absolute;
@@ -1672,9 +1672,9 @@ facts
     transform: rotate(90deg);
 }
 
-/*========================================
+/*
     Label
-========================================*/
+*/
 
 .fcc__label {
     padding: 30px;
@@ -1682,9 +1682,9 @@ facts
     max-height: 90vh;
 }
 
-/*========================================
+/*
     Title
-========================================*/
+*/
 
 .fcc__title {
     font-size: 3rem;
@@ -1718,9 +1718,9 @@ facts
     margin-bottom: 18px;
 }
 
-/*========================================
+/*
     Sections
-========================================*/
+*/
 
 .fcc__section {
     border-top: 3px solid black;
@@ -1733,9 +1733,9 @@ facts
     margin-bottom: 12px;
 }
 
-/*========================================
+/*
     Rows
-========================================*/
+*/
 
 .fcc__row {
     display: flex;
@@ -1767,18 +1767,18 @@ facts
     text-decoration: underline;
 }
 
-/*========================================
+/*
     Support
-========================================*/
+*/
 
 .fcc__section p {
     margin-bottom: 8px;
     font-size: .95rem;
 }
 
-/*========================================
+/*
     Footer
-========================================*/
+*/
 
 .fcc__footer {
     border-top: 6px solid black;
@@ -1817,9 +1817,9 @@ facts
     font-weight: 700;
 }
 
-/*========================================
+/*
     Scrollbar
-========================================*/
+*/
 
 .fcc__label::-webkit-scrollbar {
     width: 8px;
@@ -2031,6 +2031,345 @@ footer .nav__link,
     color: white;
 }
 
+/*
+
+Customer portal
+
+*/
+
+#portal {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8fbff, #eef6ff);
+}
+
+.portal__row {
+  flex-direction: column;
+}
+
+.portal__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    margin-bottom: 72px;
+}
+
+.portal__header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.portal__header-icon {
+  width: 76px;
+  height: 76px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1E88E5, #1565D8, #111827);
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.portal__feature {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  align-items: center;
+  gap: 48px;
+
+  max-width: 1100px;
+  margin: 40px auto 56px;
+  padding: 40px;
+
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.portal__feature-text h2 {
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.portal__feature-text p {
+  font-size: 18px;
+  line-height: 2.0;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.portal__title {
+  font-size: 48px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.portal__subtitle {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.portal__imgs {
+  width: 100%;
+  height: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.portal__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.portal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.portal__card {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #111827;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(30, 136, 229, 0.12);
+  transition: 300ms ease;
+}
+
+.portal__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
+}
+
+.portal__card--primary {
+  background: linear-gradient(135deg, #1E88E5, #1565D8);
+  color: white;
+}
+
+.portal__icon {
+  font-size: 34px;
+  margin-bottom: 22px;
+  color: #1E88E5;
+}
+
+.portal__card--primary .portal__icon {
+  color: white;
+}
+
+.portal__card h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.portal__card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.portal__card--primary p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/*
+
+Fiber Contract
+
+*/
+
+#fiber-contract {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #f8fbff, #eef6ff);
+}
+
+.fiber-contract__row {
+  flex-direction: column;
+}
+
+.fiber-contract__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  margin-bottom: 32px;
+  color: #1E88E5;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fiber-contract__header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.fiber-contract__header-icon {
+  width: 76px;
+  height: 76px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1E88E5, #1565D8, #111827);
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.fiber-contract__header h1 {
+  font-size: 48px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.fiber-contract__header p {
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.fiber-contract__notice {
+  display: flex;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto 48px;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: #fff;
+  border-left: 5px solid #1E88E5;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.fiber-contract__notice i {
+  color: #1E88E5;
+  font-size: 24px;
+}
+
+.fiber-contract__notice p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.contract-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.contract-summary__card {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(30, 136, 229, 0.12);
+}
+
+.contract-summary__card i {
+  font-size: 32px;
+  color: #1E88E5;
+  margin-bottom: 20px;
+}
+
+.contract-summary__card h2 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.contract-summary__card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.official-contract {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  background: linear-gradient(135deg, #1E88E5, #1565D8);
+  padding: 36px;
+  border-radius: 24px;
+  margin-bottom: 56px;
+  color: white;
+}
+
+.official-contract__text h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.official-contract__text p {
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.official-contract__buttons {
+  display: flex;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.contract-btn {
+  background: white;
+  color: #1E88E5;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 300ms ease;
+}
+
+.contract-btn:hover {
+  transform: translateY(-3px);
+}
+
+.contract-btn--outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.contract-preview {
+  text-align: center;
+}
+
+.contract-preview h2 {
+  font-size: 36px;
+  color: #111827;
+  margin-bottom: 28px;
+}
+
+.contract-preview__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contract-preview__page span {
+  margin-bottom: 14px;
+  font-weight: 800;
+  color: #1E88E5;
+}
+
+.contract-preview__page img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+}
+
+
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     width: 10px;
@@ -2166,6 +2505,38 @@ Tablet
     .socials__list li {
         justify-content: center;
     }
+
+    .portal__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+   .contract-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .official-contract {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .portal__hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portal__header {
+        text-align: center;
+    }
+
+    .portal__feature {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 28px;
+    }
+
+    .portal__imgs {
+    height: 360px;
+  }
     
 }
 
@@ -2411,6 +2782,47 @@ Tablet
         margin-top: 16px;
         font-size: 13px;
     }
+    
+    #portal {
+        padding: 56px 0;
+    }
+
+    .portal__title {
+        font-size: 36px;
+    }
+
+    .portal__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portal__card {
+        padding: 28px;
+    }
+
+    #fiber-contract {
+    padding: 56px 0;
+  }
+
+  .fiber-contract__header h1 {
+    font-size: 36px;
+  }
+
+  .contract-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .official-contract {
+    padding: 28px;
+  }
+
+  .official-contract__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contract-btn {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2450,6 +2862,21 @@ Tablet
     button {
         width: 100%;
     }
+
+    .contact__card {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .contact__info {
+        width: 100%;
+    }
+
+    .contact__phone {
+        font-size: 32px;
+    }
+    
     .price__genre {
         flex-direction: column;
         gap: 24px;
