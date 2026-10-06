@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logo from "./assets/hbi__logo--full.png";
 
 export default function Navbar({ openCoverageModal, openModal }) {
@@ -7,25 +8,27 @@ export default function Navbar({ openCoverageModal, openModal }) {
         <div className="container">
           <div className="row">
             <div className="nav__bar">
-              <a href="/">
+              <Link to="/">
                 <img
                   src={logo}
                   alt="Hillbilly Internet"
                   className="nav__logo"
                 />
-              </a>
+              </Link>
 
               <ul className="nav__list">
                 <li>
-                  <a href="/" className="nav__link page__link">
+                  <Link to="/" className="nav__link page__link">
                     Home
-                  </a>
+                  </Link>
                 </li>
+
                 <li>
-                  <a href="/about" className="nav__link page__link">
+                  <Link to="/about" className="nav__link page__link">
                     About
-                  </a>
+                  </Link>
                 </li>
+
                 <li>
                   <button
                     type="button"
@@ -35,16 +38,19 @@ export default function Navbar({ openCoverageModal, openModal }) {
                     Coverage
                   </button>
                 </li>
+
                 <li>
-                  <a href="/pricing" className="nav__link page__link">
+                  <Link to="/pricing" className="nav__link page__link">
                     Packages
-                  </a>
+                  </Link>
                 </li>
+
                 <li>
-                  <a href="/portal" className="nav__link page__link">
+                  <Link to="/portal" className="nav__link page__link">
                     Portal
-                  </a>
+                  </Link>
                 </li>
+
                 <li>
                   <button
                     type="button"
