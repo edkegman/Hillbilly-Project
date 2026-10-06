@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router";
+import { HashRouter, Routes, Route } from "react-router";
 import "./index.css";
 
 import Navbar from "./1Navbar";
@@ -34,7 +34,9 @@ function App() {
     document.body.style.overflow = "hidden";
 
     function handleKeyDown(event) {
-      if (event.key === "Escape") setActiveModal(null);
+      if (event.key === "Escape") {
+        setActiveModal(null);
+      }
 
       if (event.key === "Tab") {
         const dialog = document.querySelector('[role="dialog"]');
@@ -94,21 +96,16 @@ function App() {
           />
 
           <Route path="/about" element={<About />} />
-
           <Route path="/pricing" element={<Packages />} />
-
           <Route path="/portal" element={<Portal />} />
-
           <Route path="/fiber-contract" element={<FiberContract />} />
-
-          <Route path="/care-plan" element={<CarePlan openModal={openContact} />}/>
-          
+          <Route
+            path="/care-plan"
+            element={<CarePlan openModal={openContact} />}
+          />
           <Route path="/terms" element={<Terms />} />
-
           <Route path="/privacy" element={<Privacy />} />
-
           <Route path="/use" element={<AcceptableUse />} />
-
           <Route path="*" element={<h1>Page not found</h1>} />
         </Routes>
       </main>
@@ -127,7 +124,7 @@ function App() {
 }
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );
