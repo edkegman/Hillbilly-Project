@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import logo from "./assets/hbi__logo.png";
 
 export default function Footer({ openCoverageModal }) {
@@ -6,21 +7,25 @@ export default function Footer({ openCoverageModal }) {
       <div className="container">
         <div className="row footer__row">
           <div className="footer__img">
-            <a href="#">
+            <Link to="/">
               <img
                 src={logo}
                 alt="Hillbilly Internet"
                 className="footer__logo"
               />
-            </a>
+            </Link>
           </div>
 
           <ul className="nav__list">
             <li>
-              <a href="/" className="nav__link page__link">Home</a>
+              <Link to="/" className="nav__link page__link">
+                Home
+              </Link>
             </li>
             <li>
-              <a href="/about" className="nav__link page__link">About</a>
+              <Link to="/about" className="nav__link page__link">
+                About
+              </Link>
             </li>
             <li>
               <button
@@ -32,27 +37,27 @@ export default function Footer({ openCoverageModal }) {
               </button>
             </li>
             <li>
-              <a href="/pricing" className="nav__link page__link">
+              <Link to="/pricing" className="nav__link page__link">
                 Packages
-              </a>
+              </Link>
             </li>
           </ul>
 
           <ul className="nav__list">
             <li>
-              <a href="/terms" className="nav__link page__link">
+              <Link to="/terms" className="nav__link page__link">
                 Terms of Service
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/privacy" className="nav__link page__link">
+              <Link to="/privacy" className="nav__link page__link">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/use" className="nav__link page__link">
+              <Link to="/use" className="nav__link page__link">
                 Acceptable Use Policy
-              </a>
+              </Link>
             </li>
           </ul>
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router";
 import { broadbandPlans } from "./plans";
 
 export default function FactsModal({ planId, onClose }) {
@@ -178,7 +179,9 @@ export default function FactsModal({ planId, onClose }) {
                 {section.title === "Monthly Price" && (
                   <div className="fcc__row">
                     <span>Terms of Contract</span>
-                    <a href="/terms">View Terms</a>
+                    <Link to="/terms" onClick={onClose}>
+                      View Terms
+                    </Link>
                   </div>
                 )}
               </div>

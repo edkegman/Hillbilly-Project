@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import bobby from "./assets/Bobby.png";
 
 const portalCards = [
@@ -7,6 +8,7 @@ const portalCards = [
     href: "https://serv01.apogeebilling.com/selfcare/hillbillywireless/",
     icon: "fa-credit-card",
     primary: true,
+    external: true,
   },
   {
     title: "Fiber Contract",
@@ -86,24 +88,44 @@ export default function Portal() {
           </div>
 
           <div className="portal__grid">
-            {portalCards.map((card) => (
-              <a
-                key={card.href}
-                href={card.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`portal__card${
-                  card.primary ? " portal__card--primary" : ""
-                }`}
-              >
-                <i
-                  className={`fa-solid ${card.icon} portal__icon`}
-                  aria-hidden="true"
-                />
-                <h2>{card.title}</h2>
-                <p>{card.description}</p>
-              </a>
-            ))}
+            {portalCards.map((card) => {
+              const className = `portal__card${
+                card.primary ? " portal__card--primary" : ""
+              }`;
+
+              const content = (
+                <>
+                  <i
+                    className={`fa-solid ${card.icon} portal__icon`}
+                    aria-hidden="true"
+                  />
+                  <h2>{card.title}</h2>
+                  <p>{card.description}</p>
+                </>
+              );
+
+              return card.external ? (
+                <a
+                  key={card.href}
+                  href={card.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {content}
+                </a>
+              ) : (
+                <Link
+                  key={card.href}
+                  to={card.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={className}
+                >
+                  {content}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

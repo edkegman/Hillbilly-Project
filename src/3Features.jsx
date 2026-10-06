@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { broadbandPlans } from "./plans";
 import useReveal from "./useReveal";
 
@@ -98,9 +99,9 @@ export default function Features() {
         </div>
 
         <div className="feature__button">
-          <a href="/pricing" className="package__button">
+          <Link to="/pricing" className="package__button">
             More Packages
-          </a>
+          </Link>
         </div>
       </div>
     </section>
